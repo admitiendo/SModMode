@@ -1,0 +1,100 @@
+Options:
+  ActionBar:
+    Ticks: 5 # 0.25 Second
+  Permission: "smodmode.staff"
+  AdminPermission: "smodmode.admin" # to see the ip | country on /staffonline | To use /profile
+  NoPermission: "&CNo permission"
+
+Items:
+  Vanish:
+    Slot: 9
+    Material: "DIAMOND"
+    Lore:
+      - ' '
+      - '&cRight-Click to modify vanish.'
+      - ' '
+    Glow: true
+    Status:
+      Enabled: "&eVanish Status: &2Enabled"
+      Disabled: "&eVanish Status: &cDisabled"
+
+  RandomTeleport:
+    Slot: 1
+    Name: "&6Random Teleport"
+    Material: "CLAY_BALL"
+    Lore:
+      - ' '
+      - '&cRight-Click to teleport'
+      - '&cTo a random player.'
+      - ' '
+    Glow: true
+
+  InventorySee:
+    Slot: 5
+    Name: "&6Inspect"
+    Material: "BOOK"
+    Lore:
+      - ' '
+      - '&cRight-Click a player'
+      - '&cTo view his inventory.'
+      - ' '
+    Glow: true
+
+Messages:
+  Titles: true # if titles are enabled the message won't be displayed.
+  StaffChat:
+    Format: "&7[&bS&3C&7] &3%player%&7: &b%message%"
+    Enabled:
+      Sound: "ORB_PICKUP"
+      Message: "&bStaffChat &eHas been enabled."
+      Title:
+        Normal: "&bStaffChat"
+        SubTitle: "&bHas been enabled"
+    Disabled:
+      Sound: "ORB_PICKUP"
+      Message: "&bStaffChat &cHas been disabled."
+      Title:
+        Normal: "&bStaffChat"
+        SubTitle: "&bHas been disabled"
+  StaffMode:
+    Enabled:
+      Sound: "ORB_PICKUP"
+      Message: "&bStaffMode &eHas been enabled."
+      Title:
+        Normal: "&bStaffMode"
+        SubTitle: "&bHas been enabled"
+    Disabled:
+      Sound: "ORB_PICKUP"
+      Message: "&bStaffMode &cHas been disabled."
+      Title:
+        Normal: "&bStaffMode"
+        SubTitle: "&bHas been disabled"
+
+  Vanish:
+    Enabled:
+      Sound: "ORB_PICKUP"
+      Message: "&bVanish &eHas been enabled."
+      Title:
+        Normal: "&bVanish"
+        SubTitle: "&bHas been enabled"
+    Disable:
+      Sound: "ORB_PICKUP"
+      Message: "&bVanish &cHas been disabled."
+      Title:
+        Normal: "&bVanish"
+        SubTitle: "&bHas been disabled"
+
+  #%rtp_player% - %inv_player%
+  RandomTeleport:
+    Sound: "ORB_PICKUP"
+    Message: "&bYou have been random teleported to: &c%rtp_player%"
+    Title:
+      Normal: "&BRandom Teleport"
+      SubTitle: "&B%rtp_player%"
+
+  InventorySee:
+    Message: "&bYou are viewing inventory of: &c%inv_player%"
+    Menu:
+      Title: "&CInventory: &d%inv_player%"
+
+Inventories:
